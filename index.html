@@ -3,211 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rithesh's Travel Blog - Adventures Around the World</title>
-  <meta name="description" content="Follow Rithesh's thrilling travel adventures and explore amazing destinations around the world.">
+  <title>Rithesh's Travel Blog - College Adventures</title>
+  <meta name="description" content="Follow Rithesh's travel adventures during B.Tech years exploring amazing destinations across India.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div class="page-grid">
-    <!-- Header with Hero Section -->
+  <div class="container">
+    <!-- Header Section -->
     <header class="header">
-      <nav class="nav-bar">
-        <div class="logo">✈️ Rithesh's Travel Diary</div>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#journey">Journey</a>
-          <a href="#places">Destinations</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-      <div class="hero">
-        <h1 class="hero-title">Adventures Beyond Comfort</h1>
-        <p class="hero-subtitle">Exploring the world, one thrilling destination at a time</p>
-        <a href="#places" class="cta-button">Explore My Journeys</a>
+      <div class="logo">✈️ Rithesh's Travel Diary</div>
+      <h1>My College Travel Adventures</h1>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search destinations...">
+        <button id="search-btn"><i class="fas fa-search"></i></button>
       </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="about-content">
-        <h2>Hi, I'm Rithesh! 👋</h2>
-        <p>I'm a travel enthusiast and student at CVR College of Engineering, passionate about exploring new horizons. My philosophy? <strong>Thrill over comfort</strong>. Whether it's trekking through mountainous terrain, experiencing new cultures, or diving into adventures, I believe the best memories are made outside your comfort zone.</p>
-        <div class="stats">
-          <div class="stat-item">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Destinations</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">3</span>
-            <span class="stat-label">Years Traveling</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">∞</span>
-            <span class="stat-label">Memories</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#year1">Year 1 Trips</a></li>
+        <li><a href="#year2">Year 2 Trips</a></li>
+      </ul>
+    </nav>
 
-    <!-- Sidebar with Journey Timeline -->
-    <aside class="sidebar" id="journey">
-      <h2>🗺️ My Travel Timeline</h2>
-      <div class="timeline">
-        <div class="year-block">
-          <h3>🎓 First Year</h3>
-          <ul>
-            <li>🏔️ Manali - Snow-capped adventures</li>
-            <li>🏛️ Delhi - Historical wonders</li>
-          </ul>
+    <!-- Main Content -->
+    <main class="content">
+      <!-- Year 1 Section -->
+      <section id="year1" class="year-section">
+        <h2>B.Tech Year 1: The Debut Adventures</h2>
+        
+        <!-- Delhi Section -->
+        <div class="destination">
+          <h3><i class="fas fa-city"></i> Delhi</h3>
+          <p>Delhi, India's capital, is a vibrant blend of history and modernity. I explored the majestic Red Fort, wandered through the bustling streets of Chandni Chowk, and marveled at the towering Qutub Minar. The city's rich cultural heritage, delicious street food, and architectural wonders made it an unforgettable experience.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Red Fort, Delhi">
+              <p class="caption">The magnificent Red Fort</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1592639296346-560c37a0f711?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Qutub Minar, Delhi">
+              <p class="caption">Towering Qutub Minar</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1585136917228-92c27589e6b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chandni Chowk, Delhi">
+              <p class="caption">Bustling streets of Chandni Chowk</p>
+            </div>
+          </div>
+          <button class="read-more-btn">Read More <i class="fas fa-chevron-down"></i></button>
+          <div class="extra-content">
+            <p>Delhi's food scene was a highlight of my trip. From the spicy golgappas at Connaught Place to the rich butter chicken in Pandara Road, every meal was a culinary adventure. I also visited the peaceful Lotus Temple and the impressive Akshardham Temple, which showcases incredible Indian architecture. The contrast between Old Delhi's narrow lanes and New Delhi's wide avenues designed by Edwin Lutyens was striking.</p>
+            <p>Travel Tip: The Delhi Metro is the best way to navigate the city and avoid traffic jams!</p>
+          </div>
         </div>
-        <div class="year-block">
-          <h3>🌟 Second Year</h3>
-          <ul>
-            <li>🌊 Goa - Beach paradise</li>
-            <li>🏰 Jaipur - Pink city charm</li>
-            <li>🌄 Rishikesh - Spiritual thrills</li>
-          </ul>
+        
+        <!-- Manali Section -->
+        <div class="destination">
+          <h3><i class="fas fa-mountain"></i> Manali</h3>
+          <p>Nestled in the mountains of Himachal Pradesh, Manali was a breathtaking escape. I trekked through pine forests, experienced snow for the first time at Rohtang Pass, and enjoyed the peaceful flow of the Beas River. The adventure sports, cozy cafes in Old Manali, and stunning mountain views made this trip truly special.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rohtang Pass, Manali">
+              <p class="caption">Snow-covered Rohtang Pass</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1591649472399-20b52cccad6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beas River, Manali">
+              <p class="caption">Serene Beas River</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626077578726-5b9a1c2a8da4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Old Manali">
+              <p class="caption">Charming cafes in Old Manali</p>
+            </div>
+          </div>
+          <button class="read-more-btn">Read More <i class="fas fa-chevron-down"></i></button>
+          <div class="extra-content">
+            <p>The local Himachali cuisine was a delightful discovery during my stay in Manali. I tried Siddu (a type of bread stuffed with poppy seeds) and Chha Gosht (a lamb curry) at a local home. The apple orchards around Manali were in full bloom during my visit, adding to the scenic beauty. I also visited the hot springs at Vashisht, which was a relaxing experience after a day of trekking.</p>
+            <p>Travel Tip: Visit during May-June for pleasant weather, but September offers fewer crowds and beautiful views!</p>
+          </div>
         </div>
-        <div class="year-block">
-          <h3>🚀 Third Year</h3>
-          <ul>
-            <li>🏔️ Ladakh - Mountain majesty</li>
-            <li>🌴 Kerala - Backwater bliss</li>
-            <li>🎭 Varanasi - Cultural immersion</li>
-          </ul>
-        </div>
-      </div>
-      <div class="sidebar-cta">
-        <p>📸 Follow my adventures on social media!</p>
-        <div class="social-links">
-          <a href="#" class="social-icon">📷 Instagram</a>
-          <a href="#" class="social-icon">🐦 Twitter</a>
-        </div>
-      </div>
-    </aside>
-
-    <!-- Main Content - Blog Posts -->
-    <main class="main-content" id="places">
-      <h2 class="section-title">✨ Featured Destinations</h2>
+      </section>
       
-      <article class="blog-post featured">
-        <div class="post-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-          <span class="featured-badge">⭐ Featured</span>
+      <!-- Year 2 Section -->
+      <section id="year2" class="year-section">
+        <h2>B.Tech Year 2: The Grand Exploration</h2>
+        
+        <!-- Pondicherry Section -->
+        <div class="destination">
+          <h3>Pondicherry</h3>
+          <p>Pondicherry (Puducherry) charmed me with its French colonial heritage and serene beaches. Walking through the colorful French Quarter, enjoying the peaceful Promenade Beach, and experiencing the spiritual atmosphere of Auroville were highlights. The unique blend of Indian and French cultures, delicious cuisine, and relaxed vibe made this coastal town a perfect getaway.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1582810808951-3e50e830de76?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="French Quarter, Pondicherry">
+              <p class="caption">Colorful French Quarter</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1623059590897-97249ca3493e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Promenade Beach, Pondicherry">
+              <p class="caption">Serene Promenade Beach</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1589738216835-8d402e1d0512?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Auroville, Pondicherry">
+              <p class="caption">Spiritual Auroville</p>
+            </div>
+          </div>
         </div>
-        <div class="post-content">
-          <span class="post-date">October 2024</span>
-          <h3>The Magical Mountains of Ladakh</h3>
-          <p>An unforgettable journey through the highest motorable roads, pristine lakes, and breathtaking landscapes. Ladakh taught me the true meaning of adventure - where oxygen is scarce but the views are abundant.</p>
-          <ul class="highlights">
-            <li>✅ Pangong Lake's mesmerizing blues</li>
-            <li>✅ Khardung La - World's highest motorable pass</li>
-            <li>✅ Nubra Valley's desert mountains</li>
-          </ul>
-          <a href="#" class="read-more">Read Full Story →</a>
+        
+        <!-- Varanasi Section -->
+        <div class="destination">
+          <h3>Varanasi</h3>
+          <p>Varanasi, one of the world's oldest living cities, was a profound spiritual experience. Witnessing the evening Ganga Aarti ceremony on the ghats, taking a sunrise boat ride on the sacred Ganges River, and exploring the narrow winding lanes filled with temples and shrines was mesmerizing. The city's intense spirituality, ancient traditions, and vibrant energy left a lasting impression.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1561361058-c24cecae35ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ganga Aarti, Varanasi">
+              <p class="caption">Evening Ganga Aarti ceremony</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1571536802807-30451e3955d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ganges River, Varanasi">
+              <p class="caption">Sunrise boat ride on the Ganges</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1627894006066-b45ef15868ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Varanasi Lanes">
+              <p class="caption">Narrow winding lanes of Varanasi</p>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="blog-post">
-        <div class="post-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-        <div class="post-content">
-          <span class="post-date">March 2024</span>
-          <h3>Spiritual Adventures in Rishikesh</h3>
-          <p>From bungee jumping off bridges to meditating by the Ganges, Rishikesh offers the perfect blend of adrenaline and peace. This adventure capital of India exceeded all my expectations.</p>
-          <ul class="highlights">
-            <li>🪂 Bungee jumping - 83 meters of pure thrill</li>
-            <li>🚣 White water rafting in the Ganges</li>
-            <li>🧘 Sunrise yoga by the river</li>
-          </ul>
-          <a href="#" class="read-more">Read Full Story →</a>
+        
+        <!-- Taj Mahal Section -->
+        <div class="destination">
+          <h3><i class="fas fa-landmark"></i> Taj Mahal (Agra)</h3>
+          <p>The Taj Mahal exceeded all expectations with its breathtaking beauty and perfect symmetry. Watching the white marble monument change colors at sunrise was magical. Beyond the Taj, I explored Agra Fort and Fatehpur Sikri, which provided deeper insights into the Mughal era. This wonder of the world truly deserves its reputation as a monument to eternal love.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal at Sunrise">
+              <p class="caption">Taj Mahal at Sunrise</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal Reflection">
+              <p class="caption">Perfect Reflection in Water</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal Detail">
+              <p class="caption">Intricate Marble Inlay Work</p>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="blog-post">
-        <div class="post-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-        <div class="post-content">
-          <span class="post-date">December 2023</span>
-          <h3>Paradise Found: Kerala's Backwaters</h3>
-          <p>Cruising through Kerala's tranquil backwaters in a traditional houseboat was like stepping into another world. The lush greenery, friendly locals, and delicious cuisine made this trip truly special.</p>
-          <ul class="highlights">
-            <li>🛥️ Houseboat stay in Alleppey</li>
-            <li>🌴 Exploring spice plantations</li>
-            <li>🍛 Authentic Kerala cuisine</li>
-          </ul>
-          <a href="#" class="read-more">Read Full Story →</a>
+        
+        <!-- Ujjain Section -->
+        <div class="destination">
+          <h3><i class="fas fa-pray"></i> Ujjain</h3>
+          <p>Ujjain, one of India's seven sacred cities, offered a glimpse into ancient Hindu traditions. I visited the revered Mahakaleshwar Temple, one of the twelve Jyotirlingas, and witnessed the spiritual rituals along the Shipra River. The city's religious significance, historical temples, and peaceful atmosphere made it a deeply enriching cultural experience.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mahakaleshwar Temple">
+              <p class="caption">Mahakaleshwar Temple</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Shipra River Aarti">
+              <p class="caption">Evening Aarti at Shipra River</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ujjain Temples">
+              <p class="caption">Ancient Temples of Ujjain</p>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="blog-post">
-        <div class="post-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
-        <div class="post-content">
-          <span class="post-date">June 2023</span>
-          <h3>The Royal Heritage of Jaipur</h3>
-          <p>Walking through the Pink City felt like traveling back in time. From majestic forts to vibrant bazaars, Jaipur's rich history and culture left me spellbound.</p>
-          <ul class="highlights">
-            <li>🏰 Amber Fort's grandeur</li>
-            <li>🎨 Hawa Mahal's architecture</li>
-            <li>🛍️ Traditional handicraft shopping</li>
-          </ul>
-          <a href="#" class="read-more">Read Full Story →</a>
+        
+        <!-- Ayodhya Section -->
+        <div class="destination">
+          <h3><i class="fas fa-place-of-worship"></i> Ayodhya</h3>
+          <p>Ayodhya, the birthplace of Lord Rama, was a journey into Hindu mythology and heritage. Exploring the ghats along the Sarayu River, visiting ancient temples, and experiencing the city's devotional atmosphere was spiritually uplifting. The ongoing construction of the Ram Mandir added a sense of historical significance to my visit to this sacred city.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ram Janmabhoomi">
+              <p class="caption">Ram Janmabhoomi Site</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sarayu River">
+              <p class="caption">Boat Ride on Sarayu River</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ayodhya Temples">
+              <p class="caption">Ancient Temples of Ayodhya</p>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="blog-post">
-        <div class="post-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
-        <div class="post-content">
-          <span class="post-date">January 2023</span>
-          <h3>Manali: My First Mountain Adventure</h3>
-          <p>My first encounter with snow-capped mountains in Manali sparked my love for travel. From playing in the snow at Rohtang Pass to exploring Solang Valley, every moment was magical.</p>
-          <ul class="highlights">
-            <li>❄️ First time seeing snow</li>
-            <li>🎿 Skiing in Solang Valley</li>
-            <li>☕ Café hopping in Old Manali</li>
-          </ul>
-          <a href="#" class="read-more">Read Full Story →</a>
+        
+        <!-- Vrindavan Section -->
+        <div class="destination">
+          <h3><i class="fas fa-om"></i> Vrindavan</h3>
+          <p>Vrindavan, associated with Lord Krishna, was filled with devotional energy and colorful traditions. I explored the numerous temples, participated in the lively Holi celebrations, and enjoyed the peaceful Yamuna River. The city's narrow lanes, devotional music, and the joyful atmosphere of Krishna bhakti made this a culturally immersive experience.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Banke Bihari Temple">
+              <p class="caption">Banke Bihari Temple</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Holi Celebration">
+              <p class="caption">Colorful Holi Celebrations</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Raslila Performance">
+              <p class="caption">Traditional Raslila Performance</p>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <div class="more-coming">
-        <h3>🌏 More Adventures Coming Soon!</h3>
-        <p>I'm constantly planning my next adventure. Subscribe to get updates on new destinations and travel stories.</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
+        
+        <!-- Coorg Section -->
+        <div class="destination">
+          <h3><i class="fas fa-mountain"></i> Coorg</h3>
+          <p>Coorg (Kodagu) in Karnataka was a refreshing retreat into nature's paradise. I trekked through lush coffee plantations, enjoyed the misty views from Raja's Seat, and experienced the thundering Abbey Falls. The region's cool climate, spice gardens, and the warm hospitality of the Kodava people made this hill station a perfect escape from city life.</p>
+          <div class="photo-gallery">
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1582531763612-f89c66839883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coorg Coffee Plantation">
+              <p class="caption">Lush Coffee Plantations</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1582531763612-f89c66839883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Abbey Falls">
+              <p class="caption">Majestic Abbey Falls</p>
+            </div>
+            <div class="photo">
+              <img src="https://images.unsplash.com/photo-1582531763612-f89c66839883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Namdroling Monastery">
+              <p class="caption">Colorful Namdroling Monastery</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2>Let's Connect! 🤝</h2>
-      <p>Have travel recommendations or want to share your own adventures? I'd love to hear from you!</p>
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-        </div>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="submit-button">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p>📧 Email: rithesh.adventures@gmail.com</p>
-        <p>📱 Instagram: @rithesh_travels</p>
-        <p>🎓 CVR College of Engineering</p>
-      </div>
-    </section>
-
+    
     <!-- Footer -->
-    <footer class="footer">
-      <p>© 2024 Rithesh's Travel Blog. All rights reserved.</p>
-      <p>Made with ❤️ and wanderlust</p>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#journey">Journey</a>
-        <a href="#places">Destinations</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </footer>
+    <footer>
+    <p>&copy; 2023 Rithesh's Travel Blog. All rights reserved.</p>
+    <p>Follow my journey on social media!</p>
+  </footer>
+  
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
   </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    // Read More functionality
+    $('.read-more-btn').click(function() {
+      var extraContent = $(this).next('.extra-content');
+      extraContent.slideToggle(300);
+      
+      var icon = $(this).find('i');
+      if (icon.hasClass('fa-chevron-down')) {
+        icon.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+        $(this).html('Read Less <i class="fas fa-chevron-up"></i>');
+      } else {
+        icon.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+        $(this).html('Read More <i class="fas fa-chevron-down"></i>');
+      }
+    });
+    
+    // Back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 300) {
+        $('.back-to-top').addClass('visible');
+      } else {
+        $('.back-to-top').removeClass('visible');
+      }
+    });
+    
+    $('.back-to-top').click(function() {
+      $('html, body').animate({scrollTop: 0}, 500);
+      return false;
+    });
+    
+    // Search functionality
+    $('#search-btn').click(function() {
+      var searchTerm = $('#search-input').val().toLowerCase();
+      if (searchTerm.length > 0) {
+        $('.destination').hide();
+        $('.destination').each(function() {
+          if ($(this).text().toLowerCase().indexOf(searchTerm) > -1) {
+            $(this).show();
+          }
+        });
+      } else {
+        $('.destination').show();
+      }
+    });
+    
+    // Search on enter key
+    $('#search-input').keypress(function(e) {
+      if (e.which == 13) {
+        $('#search-btn').click();
+      }
+    });
+    
+    // Image zoom effect on click
+    $('.photo').click(function() {
+      $(this).toggleClass('zoomed');
+    });
+  });
+</script>
 </body>
 </html>
