@@ -197,6 +197,18 @@ section h2::after {
   transition: transform 0.5s ease;
 }
 
+.photo video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Taj Mahal gallery specific styles */
+.taj-mahal-gallery .photo img {
+  height: 250px;
+}
+
 .photo:hover img {
   transform: scale(1.05);
 }

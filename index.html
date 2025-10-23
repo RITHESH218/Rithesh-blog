@@ -43,7 +43,7 @@
           <p>Delhi, India's capital, is a vibrant blend of history and modernity. I explored the majestic Red Fort, wandered through the bustling streets of Chandni Chowk, and marveled at the towering Qutub Minar. The city's rich cultural heritage, delicious street food, and architectural wonders made it an unforgettable experience.</p>
           <div class="photo-gallery">
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Red Fort, Delhi">
+              <img src="d.jpg" alt="Red Fort, Delhi">
               <p class="caption">The magnificent Red Fort</p>
             </div>
             <div class="photo">
@@ -72,11 +72,11 @@
               <p class="caption">Snow-covered Rohtang Pass</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1591649472399-20b52cccad6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beas River, Manali">
+              <video src="VID_60121114_061924_141.mp4" controls></video>
               <p class="caption">Serene Beas River</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1626077578726-5b9a1c2a8da4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Old Manali">
+              <img src="m1.jpeg" alt="Old Manali">
               <p class="caption">Charming cafes in Old Manali</p>
             </div>
           </div>
@@ -98,11 +98,11 @@
           <p>Pondicherry (Puducherry) charmed me with its French colonial heritage and serene beaches. Walking through the colorful French Quarter, enjoying the peaceful Promenade Beach, and experiencing the spiritual atmosphere of Auroville were highlights. The unique blend of Indian and French cultures, delicious cuisine, and relaxed vibe made this coastal town a perfect getaway.</p>
           <div class="photo-gallery">
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1582810808951-3e50e830de76?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="French Quarter, Pondicherry">
+              <img src="p.jpeg" alt="French Quarter, Pondicherry">
               <p class="caption">Colorful French Quarter</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1623059590897-97249ca3493e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Promenade Beach, Pondicherry">
+              <img src="p2.jpeg" alt="Promenade Beach, Pondicherry">
               <p class="caption">Serene Promenade Beach</p>
             </div>
             <div class="photo">
@@ -136,17 +136,17 @@
         <div class="destination">
           <h3><i class="fas fa-landmark"></i> Taj Mahal (Agra)</h3>
           <p>The Taj Mahal exceeded all expectations with its breathtaking beauty and perfect symmetry. Watching the white marble monument change colors at sunrise was magical. Beyond the Taj, I explored Agra Fort and Fatehpur Sikri, which provided deeper insights into the Mughal era. This wonder of the world truly deserves its reputation as a monument to eternal love.</p>
-          <div class="photo-gallery">
+          <div class="photo-gallery taj-mahal-gallery">
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal at Sunrise">
+              <img src="t.jpg" alt="Taj Mahal at Sunrise">
               <p class="caption">Taj Mahal at Sunrise</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal Reflection">
+              <img src="t1.jpeg" alt="Taj Mahal Reflection">
               <p class="caption">Perfect Reflection in Water</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Taj Mahal Detail">
+              <img src="t1.jpg" alt="Taj Mahal Detail">
               <p class="caption">Intricate Marble Inlay Work</p>
             </div>
           </div>
@@ -198,15 +198,15 @@
           <p>Vrindavan, associated with Lord Krishna, was filled with devotional energy and colorful traditions. I explored the numerous temples, participated in the lively Holi celebrations, and enjoyed the peaceful Yamuna River. The city's narrow lanes, devotional music, and the joyful atmosphere of Krishna bhakti made this a culturally immersive experience.</p>
           <div class="photo-gallery">
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Banke Bihari Temple">
+              <img src="v1.jpeg" alt="Banke Bihari Temple">
               <p class="caption">Banke Bihari Temple</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Holi Celebration">
+              <img src="v2.jpeg" alt="Holi Celebration">
               <p class="caption">Colorful Holi Celebrations</p>
             </div>
             <div class="photo">
-              <img src="https://images.unsplash.com/photo-1626015633157-c8caef056ddd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Raslila Performance">
+              <img src="v.jpeg" alt="Raslila Performance">
               <p class="caption">Traditional Raslila Performance</p>
             </div>
           </div>
@@ -300,7 +300,9 @@
     
     // Image zoom effect on click
     $('.photo').click(function() {
-      $(this).toggleClass('zoomed');
+      if ($(this).find('img').length) {
+        $(this).toggleClass('zoomed');
+      }
     });
   });
 </script>
